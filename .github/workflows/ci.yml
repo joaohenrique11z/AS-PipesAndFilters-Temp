@@ -5,6 +5,10 @@ on:
     branches:
       - main
 
+permissions:
+  contents: read
+  issues: write
+
 jobs:
   security:
     uses: joaohenrique11z/teste_esteira/.github/workflows/pipeline.yml@main
