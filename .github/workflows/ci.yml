@@ -1,0 +1,11 @@
+jobs:
+  security:
+    uses: joaohenrique11z/teste_esteira/.github/workflows/pipeline.yml@v1
+    with:
+      project_name: AS-PipesAndFilters-Temp
+      stack_type: python   # ou o stack correto
+      run_dast: false
+      #dast_target_url: http://localhost:3000
+    #secrets:
+      #DEFECTDOJO_URL: ${{ secrets.DEFECTDOJO_URL }}
+      #DEFECTDOJO_API_KEY: ${{ secrets.DEFECTDOJO_API_KEY }}
