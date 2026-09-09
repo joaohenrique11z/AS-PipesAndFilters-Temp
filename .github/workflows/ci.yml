@@ -5,6 +5,7 @@ jobs:
       project_name: AS-PipesAndFilters-Temp
       stack_type: python   # ou o stack correto
       run_dast: false
+      #teste
       #dast_target_url: http://localhost:3000
     #secrets:
       #DEFECTDOJO_URL: ${{ secrets.DEFECTDOJO_URL }}
