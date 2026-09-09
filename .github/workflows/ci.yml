@@ -11,7 +11,8 @@ jobs:
     with:
       project_name: AS-PipesAndFilters-Temp
       stack_type: python
-      run_dast: false
+      run_dast: true
+      dast_target_url: https://example.com
     secrets:
       DEFECTDOJO_URL: ${{ secrets.DEFECTDOJO_URL }}
       DEFECTDOJO_API_KEY: ${{ secrets.DEFECTDOJO_API_KEY }}
