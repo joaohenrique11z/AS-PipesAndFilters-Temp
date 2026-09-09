@@ -1,12 +1,14 @@
+name: CI Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
 jobs:
   security:
-    uses: joaohenrique11z/teste_esteira/.github/workflows/pipeline.yml@v1
+    uses: joaohenrique11z/teste_esteira/.github/workflows/pipeline.yml@main
     with:
       project_name: AS-PipesAndFilters-Temp
-      stack_type: python   # ou o stack correto
+      stack_type: python
       run_dast: false
-      #teste
-      #dast_target_url: http://localhost:3000
-    #secrets:
-      #DEFECTDOJO_URL: ${{ secrets.DEFECTDOJO_URL }}
-      #DEFECTDOJO_API_KEY: ${{ secrets.DEFECTDOJO_API_KEY }}
