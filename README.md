@@ -97,10 +97,10 @@ um **Pull Request** com as mudanças.
 ## Respostas do Exercício
 
 **a) O Pipeline 2 deu o mesmo resultado do Pipeline 1? Por quê?**
-Sim, deu o mesmo resultado. Isso aconteceu porque a gente só trocou a palavra "João" por "Maria". Como essa troca não dependia da quantidade de espaços, a ordem dos filtros não fez diferença para esse texto. Se o filtro dependesse dos espaços pra achar a palavra, aí a ordem importaria.
+Sim, deu o mesmo resultado. Isso aconteceu porque só trocou a palavra "João" por "Maria". Como essa troca não dependia da quantidade de espaços, a ordem dos filtros não fez diferença para esse texto. Se o filtro dependesse dos espaços pra achar a palavra, aí sim a ordem importaria.
 
 **b) Você precisou abrir o `pipe.py` em algum momento?**
-Não precisei mexer em nada lá. O Pipe só chama o método `execute` da interface sem se importar com qual filtro tá rodando. É o Princípio Aberto/Fechado na prática: adicionamos funcionalidades novas sem alterar o código que orquestra tudo.
+Não precisei mexer em nada lá
 
 **c) Se amanhã fosse preciso adicionar mais dez filtros, quantos arquivos que já existem teriam que ser modificados?**
-Só dois: o `filters/__init__.py` (para exportar os filtros novos) e o `main.py` (para plugar eles no pipeline). Todo o resto do projeto ficaria intocado.
+Só dois: o `filters/__init__.py` (para exportar os filtros novos) e o `main.py` (para plugar eles no pipeline)
