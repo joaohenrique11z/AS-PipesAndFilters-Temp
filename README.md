@@ -12,6 +12,7 @@ flexibilidade, manutenibilidade e extensão do sistema.
   entrada ──▶ [ Filtro A ] ──▶ [ Filtro B ] ──▶ [ Filtro C ] ──▶ saída
               └──────────── Pipe conduz o dado ────────────┘
 ```
+#teste
 
 ## Estrutura do projeto
 
